@@ -1,0 +1,46 @@
+/* Contenedor principal que envuelve todo el contenido de la página */
+body {
+  display: flex;
+  /*justify-content: center; /* Centra horizontalmente el contenido de la página */
+  align-items: center; /* Centra verticalmente el contenido de la página */
+  height: 100vh; /* Usa el 100% de la altura de la ventana gráfica */
+  margin: 0; /* Elimina el margen predeterminado del body */
+}
+
+/* Contenedor para las tarjetas de juegos */
+.game-cards-container {
+  display: flex; /* Establece el contenedor como un contenedor de tipo flex */
+  gap: 16px; /* Espacio entre las tarjetas */
+  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+  width: 100%; /* Ocupa el ancho completo del contenedor padre */
+}
+
+/* Estilos para cada tarjeta de juego individual */
+.game-card {
+  width: 300px; /* Anchura fija para cada tarjeta */
+  background-color: #add8e6; /* Azul claro para contraste */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center; /* Contenido centrado horizontalmente */
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.game-card img {
+  max-width: 100%; /* Asegura que la imagen no se extienda más allá del 100% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  margin-bottom: 10px; /* Espacio entre la imagen y otros elementos */
+}
+
+/* Estilos para los encabezados (h3) dentro de las tarjetas */
+.game-card h3 {
+  font-size: 1.2rem; /* Tamaño de fuente */
+  margin: 0; /* Elimina el margen predeterminado del encabezado */
+}
+
+/* Estilos para los párrafos (p) dentro de las tarjetas */
+.game-card p {
+  font-size: 1rem; /* Tamaño de fuente */
+  color: #555; /* Color del texto gris oscuro */
+}

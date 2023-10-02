@@ -1,0 +1,77 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    170deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(241, 44, 157, 1) 38%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.app {
+  height: 103vh;
+}
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.game-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.game-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Agrega estilos CSS personalizados para el botón de cancelar */
+button.cancel-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+button.cancel-button:hover {
+  background-color: #ff3333;
+}
+.game-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 150%;
+}
